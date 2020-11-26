@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\s9810\source\repos\compiler\compiler\main.cpp(23,11): warning C4244: '正在初始化': 將 'std::streamoff' 轉換為 'long'，由於類型不同，可能導致資料遺失
+  file_process.cpp
+C:\Users\s9810\source\repos\compiler\compiler\file_process.cpp(8,12): warning C4244: '正在初始化': 將 'std::streamoff' 轉換為 'long'，由於類型不同，可能導致資料遺失
+  正在產生程式碼...
+  compiler.vcxproj -> C:\Users\s9810\source\repos\compiler\Debug\compiler.exe
