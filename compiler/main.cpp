@@ -19,7 +19,7 @@ int main(int argv,char** args)
 
 	for (int i = 1; i < argv; i++)
 	{
-		str2[i] =(char*) scan(args[i]);
+		//str2[i] =(char*) scan(args[i]);
 	}
 	
 }
