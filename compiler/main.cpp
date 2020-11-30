@@ -2,8 +2,6 @@
 #include "scan.h"
 
 
-using namespace std;
-
 int main(int argv,char** args)
 {
 	/*
@@ -21,8 +19,8 @@ int main(int argv,char** args)
 		
 	}
 	*/
-	fstream file;
-	string str="";
+	std::fstream file;
+	std::string str="";
 	file.open("main.cpp",ios::in);
 	str.assign( istreambuf_iterator<char>(file) , istreambuf_iterator<char>() );
 	cout <<"Int is : "<< sizeof(int)<<endl;
@@ -34,7 +32,7 @@ int main(int argv,char** args)
 	cout << "sttt is : " <<endl<< str << endl;
 }
 
-
+std:: 
 
 
 
