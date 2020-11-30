@@ -21,7 +21,7 @@ int main(int argv,char** args)
 	*/
 	std::fstream file;
 	std::string str="";
-	file.open("main.cpp",std::ios::in);
+	file.open("file_process.cpp",std::ios::in);
 	str.assign( std::istreambuf_iterator<char>(file) , std::istreambuf_iterator<char>() );
 	std::cout <<"Int is : "<< sizeof(int)<<std::endl;
 	std::cout << "char is : "<<sizeof(char) << std::endl;
@@ -29,11 +29,9 @@ int main(int argv,char** args)
 	std::cout <<"double is : " <<sizeof(double) << std::endl;
 	std::cout <<"bool is : "<< sizeof(bool) << std::endl;
 	std::cout <<"string is : "<< sizeof(std::string) << std::endl;
-	std::cout << "sttt is : " <<std::endl<< str << std::endl;
+	std::cout << "sttt is : " <<std::endl<< trim(str)<< std::endl<<"-------------------------------------------------------";
+	std::cout << "\nthe size of str is " << str.size();
 }
-
-std:: 
-
 
 
 
