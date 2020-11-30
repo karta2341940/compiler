@@ -5,12 +5,12 @@
 int main(int argv,char** args)
 {
 	/*
-	fstream file;
+	std::fstream file;
 	for (int i = 1; i < argv; i++)
 	{
-		cout << args[i] << endl;
+		std::cout << args[i] << std::endl;
 		if (i == argv)
-		cout << endl;
+		std::cout << std::endl;
 	}
 	
 
@@ -21,15 +21,15 @@ int main(int argv,char** args)
 	*/
 	std::fstream file;
 	std::string str="";
-	file.open("main.cpp",ios::in);
-	str.assign( istreambuf_iterator<char>(file) , istreambuf_iterator<char>() );
-	cout <<"Int is : "<< sizeof(int)<<endl;
-	cout << "char is : "<<sizeof(char) << endl;
-	cout <<"float is : " << sizeof(float) << endl;
-	cout <<"double is : " <<sizeof(double) << endl;
-	cout <<"bool is : "<< sizeof(bool) << endl;
-	cout <<"string is : "<< sizeof(string) << endl;
-	cout << "sttt is : " <<endl<< str << endl;
+	file.open("main.cpp",std::ios::in);
+	str.assign( std::istreambuf_iterator<char>(file) , std::istreambuf_iterator<char>() );
+	std::cout <<"Int is : "<< sizeof(int)<<std::endl;
+	std::cout << "char is : "<<sizeof(char) << std::endl;
+	std::cout <<"float is : " << sizeof(float) << std::endl;
+	std::cout <<"double is : " <<sizeof(double) << std::endl;
+	std::cout <<"bool is : "<< sizeof(bool) << std::endl;
+	std::cout <<"string is : "<< sizeof(std::string) << std::endl;
+	std::cout << "sttt is : " <<std::endl<< str << std::endl;
 }
 
 std:: 
