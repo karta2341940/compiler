@@ -1,13 +1,12 @@
-#include <iostream>
-#include <fstream>
 #include <string>
-#include <string.h>
 #include "scan.h"
+
 
 using namespace std;
 
 int main(int argv,char** args)
 {
+	/*
 	fstream file;
 	for (int i = 1; i < argv; i++)
 	{
@@ -15,13 +14,24 @@ int main(int argv,char** args)
 		if (i == argv)
 		cout << endl;
 	}
-	char** str2 = (char**)calloc(argv-1, sizeof(char*));
+	
 
 	for (int i = 1; i < argv; i++)
 	{
-		//str2[i] =(char*) scan(args[i]);
+		
 	}
+	*/
+	fstream file;
+	string str="";
+	file.open("main.cpp",ios::in);
 	
+	cout <<"Int is : "<< sizeof(int)<<endl;
+	cout << "char is : "<<sizeof(char) << endl;
+	cout <<"float is : " << sizeof(float) << endl;
+	cout <<"double is : " <<sizeof(double) << endl;
+	cout <<"bool is : "<< sizeof(bool) << endl;
+	cout <<"string is : "<< sizeof(string) << endl;
+	cout << "sttt is : " << file.tellg() << endl;
 }
 
 
